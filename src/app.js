@@ -12,10 +12,10 @@ app.use(
         extended: false,
     })
 );
-require('./routes')(index);
+require('./routes')(app);
 app.get('/', (req, res) => {
     res.send({
-        message: 'Hola Mundo yx7',
+        message: 'Hola Mundo yx87',
     });
 })
 
