@@ -26,6 +26,8 @@ app.listen(5000, () => {
     console.log(`Server ruunning attt port ${port}`);
 })
 
+module.exports = app;
+
 async function main() {
     try{
         await sequelize2.authenticate();
