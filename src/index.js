@@ -4,25 +4,25 @@ import {sequelize2} from "../src/database/conexion.js";
 const bodyParser = require('body-parser');
  var cors = require('cors')
 
-const index = express();
+const app = express();
 const port = 4004;
-index.use(bodyParser.json());
-index.use(
+app.use(bodyParser.json());
+app.use(
     bodyParser.urlencoded({
         extended: false,
     })
 );
 require('./routes')(index);
-index.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send({
         message: 'Hola Mundo yx7',
     });
 })
 
 
-index.use(cors())
+app.use(cors())
 
-index.listen(4004, () => {
+app.listen(5000, () => {
     console.log(`Server ruunning attt port ${port}`);
 })
 
