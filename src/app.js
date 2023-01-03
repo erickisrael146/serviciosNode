@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.use(cors())
 
-app.listen(5000, () => {
+app.listen(4008, () => {
     console.log(`Server ruunning attt port ${port}`);
 })
 
