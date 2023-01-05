@@ -14,7 +14,7 @@ app.use(
 require('./src/routes')(app);
 app.get('/', (req, res) => {
     res.send({
-        message: 'Hola Mundo yx87imdex',
+        message: 'Hola Mundo yx8imdex',
     });
 })
 
